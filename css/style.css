@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+    header {
+        display: block;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .picture-placeholder {
+        flex-direction: column;
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -26,7 +38,9 @@ body section {
 
 body p {
     text-justify: center;
-    padding: 10px 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 5px 20px;
 }
 
 .picture-placeholder {
@@ -42,6 +56,11 @@ body p {
 .picture-placeholder div {
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.message-form  {
+    display: flex;
+    flex-direction: column;
 }
 
 footer p {

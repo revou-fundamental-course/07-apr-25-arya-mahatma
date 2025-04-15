@@ -28,14 +28,23 @@
     <!-- Main Content -->
     <main>
         <section id="home-section">
-            <h2>Hi , Welcome to Our Website</h2>  
-            <p>Ini adalah percobaan website pertama. Kegunaan dari dibuatnya website ini adalah untuk melatih skill dasar pemrograman web yaitu HTML, CSS dan Javascript.</p>    
-            <p>Setiap peserta mini course RevoU diwajibkan untuk membuat mock up web sebagai persyaratan agar dapat mendapatkan sertifikat</p>
+            <h2>Hi <span id="name">Your Name</span>, Welcome to Our Website</h2>  
+            <p>Ini adalah percobaan website pertama. Kegunaan dari dibuatnya website ini adalah untuk melatih skill dasar pemrograman web yaitu HTML, CSS dan Javascript.    
+            </p>
+            <p>Setiap peserta RevoU Fundamental Course diwajibkan untuk membuat mock up web sebagai persyaratan agar dapat mendapatkan sertifikat sebagai tanda telah mengikuti RevoU Fundamental Course.</p>
+
+             <img src="https://picsum.photos/id/9/5000/3269" alt="mainbanner" style="max-width: 100%;">
+
+
         </section>
 
         <section id="our-profile-section">
             <h2>Our Profile</h2>
-            <p>This is Our Profile placeholder</p>
+            <p>Ini placeholder untuk bagian profile. Di sini anda dapat memberitahu pengunjung tentang siapa Anda, apa yang perusahaan anda lakukan, visi misi perusahaan Anda dan lain sebagainya. Silahkan ceritakan tentang perusahaan Anda dengan jelas dan dengan bahasa yang menarik.</p>
+            <h3>Who Are We?</h3>
+            <p>Your Profile</p>
+            <h3>Our Vision and Mission</h3>
+            <p>Your Vision and Mission</p>
         </section>
 
         <section id="our-portfolio-section">
@@ -53,11 +62,56 @@
             </div>
         </section>
 
-        <section id="message-us-section">
+        <section id="message-us-section" style="display: flex;">
+        
+        <div style="width: 50%;">   
         <h2>Message Us</h2>
+        <div id="message-form-box">
+        <form id="message-form" name="message-form" onsubmit="return validateForm()">
+            <label>
+              Nama:
+              <input placeholder="Nama" type="text" name="full-name" />
+            </label>
+            <br>
+          
+            <label>
+              Tanggal Lahir:
+              <input type="date" name="birth-date" />
+            </label>
+            <br>
+          
+            Jenis Kelamin:
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Perempuan</label>
+            <br>
+          
+            <label>
+              Pesan:
+              <textarea placeholder="Pesan" name="messages"></textarea>
+            </label>
+            <br>
+          
+            <input type="submit" value="Submit" />
+          </form>
+                </div>
+        </div>
+
+        <div id="validation-box" style="width: 50%;">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+        </div>
+
         </section>
     </main>
 
+    
     <!-- Footer Content -->
     <footer>
     <p>Created by Arya Mahatma &#169;2025</p>
