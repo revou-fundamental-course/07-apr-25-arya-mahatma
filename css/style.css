@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body section {
+    border-bottom: 1px solid #ccc;
+}
+
+body p {
+    text-justify: center;
+    padding: 10px 20px;
+}
+
+.picture-placeholder {
+    display : flex;
+    justify-content: center;
+    text-align: center; border-top: 1px solid #ccc; padding: 40px 0;
+}
+
+.picture-placeholder img{
+    height: 100px;
+}
+
+.picture-placeholder div {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer p {
+    padding-right: 50px;
+    text-align: right;
+}
